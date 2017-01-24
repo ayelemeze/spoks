@@ -10,11 +10,11 @@ rm /etc/squid/squid.conf
 # Dosya yoluna geçiş yapıyor. #
 cd /etc/squid/
 # Yeni config dosyasını yüklüyor. #
-wget https://raw.githubusercontent.com/ayelemeze/spoks/blob/dosyalar/squid.conf
+wget https://raw.githubusercontent.comayelemeze/spoks/master/squid.conf
 # root klasörüne geçiş yapılıyor. #
 cd /root/
 # proxy.py 'yi indiriyor. #
-wget https://raw.githubusercontent.com/ayelemeze/spoks/blob/dosyalar/proxy.py
+wget https://raw.githubusercontent.com/ayelemeze/spoks/master/proxy.py
 # Ekrandaki gereksiz yazılar siliniyor #
 clear && clear
 # Squid Proxy'i yeniden başlatıyor. #
