@@ -3,7 +3,7 @@ Bu script ile squid proxy'i hızlı bir şekilde kurabilirsiniz.
 ## Nasıl kullanılır?
 Alttaki kodları kopyalayın ve yapıştırın, ardından enter'a tıklayın. Bu kadar :)
 
-`cd /root/ && curl 'https://raw.githubusercontent.comayelemeze/spoks/master/proxy' --output proxy && chmod 777 proxy && bash ./proxy`
+`cd /root/ && curl 'https://raw.githubusercontent.com/ayelemeze/spoks/master/proxy' --output proxy && chmod 777 proxy && bash ./proxy`
 
 Eğer hata verirse
 
