@@ -1,0 +1,35 @@
+#!/bin/sh
+# İP adresi içi gerekli kod. #
+IP=$(ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1  -d'/')
+# Squid Proxy'i yüklüyor. #
+apt-get install squid squid-common
+# Python yüklüyor. #
+apt-get install python
+# Eski config dosyasını siliyor. #
+rm /etc/squid/squid.conf
+# Dosya yoluna geçiş yapıyor. #
+cd /etc/squid/
+# Yeni config dosyasını yüklüyor. #
+wget https://raw.githubusercontent.com/ayelemeze/spoks/blob/dosyalar/squid.conf
+# root klasörüne geçiş yapılıyor. #
+cd /root/
+# proxy.py 'yi indiriyor. #
+wget https://raw.githubusercontent.com/ayelemeze/spoks/blob/dosyalar/proxy.py
+# Ekrandaki gereksiz yazılar siliniyor #
+clear && clear
+# Squid Proxy'i yeniden başlatıyor. #
+/etc/init.d/squid restart
+# Kurulum bilgileri ekranda gösteriliyor. #
+echo 
+echo !!!!!!!!!!!!!!!!!!!!!!!!
+echo !! Kurulum tamamlandı.!!
+echo !!!!!!!!!!!!!!!!!!!!!!!!
+echo
+echo '           Kurulum Bilgileri'
+echo '###########################################'
+echo "   Proxy adresi: $IP:3128"
+echo 'Portu değiştirmek için alttaki kodu yazın ve enter a basın.'
+echo 'Kod: python proxy.py'
+echo '###########################################'
+# Kurulum dosyasını siliyor. #
+rm /root/proxy
