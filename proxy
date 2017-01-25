@@ -1,6 +1,8 @@
 #!/bin/sh
 # İP adresi içi gerekli kod. #
 IP=$(ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1  -d'/')
+# Güncelleme yapılıyor. #
+apt-get update
 # Squid Proxy'i yüklüyor. #
 apt-get install squid squid-common
 # Python yüklüyor. #
