@@ -15,6 +15,12 @@ Eğer hata verirse
 
 `./proxy`
 
+**Scripti sadece Ubuntu'da denedim, sizinde Ubuntu kullanmanızı tavsiye ederim.**
 
 ### Bunu kim, neden yaptı?
 Abdurrahman YILMAZ tarafından, sıfırdan kodlanmıştır. Aslında buna kodlama denmez, o yüzden: sıfırdan scripte dökülmüştür diyelim. Neden yapıldı sorusunun cevabı ise hem zamandan tasarruf etmek hemde bilgisayara erişim imkanı olmadığında telefon veya benzeri araçlar ile squid proxynin kurulumunu yapabilmek için.
+
+
+
+### Güncelleme detayları
+Script bazen çalışmıyordu, sorun giderildi.
