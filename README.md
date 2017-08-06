@@ -11,7 +11,7 @@ Eğer hata verirse
 
 `wget https://raw.githubusercontent.com/ayelemeze/spoks/master/proxy`
 
-`sh ubuntu`
+`sh proxy`
 
 **Scripti sadece Ubuntu'da denedim, sizinde Ubuntu kullanmanızı tavsiye ederim.**
 
