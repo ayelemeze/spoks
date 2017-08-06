@@ -11,9 +11,7 @@ Eğer hata verirse
 
 `wget https://raw.githubusercontent.com/ayelemeze/spoks/master/proxy`
 
-`chmod 777 proxy`
-
-`./proxy`
+`sh ubuntu`
 
 **Scripti sadece Ubuntu'da denedim, sizinde Ubuntu kullanmanızı tavsiye ederim.**
 
