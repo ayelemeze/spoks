@@ -1,6 +1,6 @@
 #!/bin/sh
 IP=$(ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1  -d'/')
-apt-get update -y && apt-get upgrade -y && apt-get install squid squid-common -y && apt-get install python -y && rm /etc/squid/squid.conf && cd /etc/squid/ && wget https://raw.githubusercontent.com/ayelemeze/spoks/master/squid.conf && cd /root/ && wget https://raw.githubusercontent.com/ayelemeze/spoks/master/proxy.py && clear && /etc/init.d/squid restart
+apt-get update -y && apt-get install squid squid-common -y && apt-get install python -y && rm /etc/squid/squid.conf && cd /etc/squid/ && wget https://raw.githubusercontent.com/ayelemeze/spoks/master/squid.conf && cd /root/ && wget https://raw.githubusercontent.com/ayelemeze/spoks/master/proxy.py && clear && /etc/init.d/squid restart
 echo 
 echo !!!!!!!!!!!!!!!!!!!!!!!!
 echo !! Kurulum tamamlandi.!!
@@ -13,3 +13,5 @@ echo 'Portu degistirmek icin alttaki kodu yazin ve enter a basin.'
 echo 'Kod: python proxy.py'
 echo '###########################################'
 rm /root/proxy
+
+exit
